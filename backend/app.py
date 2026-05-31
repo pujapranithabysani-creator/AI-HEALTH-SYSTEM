@@ -1,7 +1,9 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
-from backend.models.patient_model import db
-from backend.routes.patient_routes import patient_bp
+sys.path.append(os.getcwd())
+sys.path.append(os.path.join(os.getcwd(), 'backend'))
+from models.patient_model import db
+from routes.patient_routes import patient_bp
 
 def create_app():
     app = Flask(__name__)
