@@ -7,7 +7,7 @@ export const getPatients = () => {
 };
 
 export const addPatient = (patientData) => {
-    return axios.post(`${API_URL}/patients`, patientData);
+    return axios.post(`${API_URL}/add-patients`, patientData);
 };
 
 export const updatePatient = (id, patientData) => {

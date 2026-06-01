@@ -1,6 +1,5 @@
+patients.db
 node_modules/
-venv/
 __pycache__/
-database/*.db
 .env
-.DS_Store
+.venv/
